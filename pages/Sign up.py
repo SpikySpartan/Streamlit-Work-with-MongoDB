@@ -94,7 +94,7 @@ if st.button("Sign up"):
         "email": email,
         "dob": dob
     }
-    mycol.insert_one(users)
+    mycol.insert_one(user_data)
     st.write("Welcome", username)
     st.success("Sign up successful")
 
