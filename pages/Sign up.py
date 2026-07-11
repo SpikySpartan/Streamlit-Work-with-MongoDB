@@ -88,7 +88,7 @@ e=st.text_input("Email id",placeholder="Enter your email id")
 d=st.text_input("Date of Birth",placeholder="Enter your date of birth")
 if st.button("Sign up"):
     mycol.insert_one({"uname":un,"password":p,"mobileno":m,"email":e,"dob":d})
-    st.write("Welcome", username)
+  
     st.success("Sign up successful")
 
 
