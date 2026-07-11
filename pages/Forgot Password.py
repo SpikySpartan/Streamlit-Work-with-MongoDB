@@ -3,9 +3,8 @@ import os
 import pymongo
 
 import streamlit as st
-mongodb+srv://Awadhesh:<SwordArtOnine>@cluster0.gbpzk4b.mongodb.net/?appName=Cluster0
 
-conn = pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2")
+conn = pymongo.MongoClient("mongodb+srv://Awadhesh:<SwordArtOnine>@cluster0.gbpzk4b.mongodb.net/?appName=Cluster0")
 mydb =conn["Prime"]
 mycol = mydb["users"]
 
