@@ -2,6 +2,7 @@ import streamlit as st
 import base64
 import os
 import pymongo
+mongodb+srv://Awadhesh:<SwordArtOnine>@cluster0.gbpzk4b.mongodb.net/?appName=Cluster0
 conn = pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2")
 mydb =conn["Prime"]
 mycol = mydb["users"]
