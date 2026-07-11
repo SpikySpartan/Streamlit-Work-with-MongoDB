@@ -81,20 +81,13 @@ st.markdown(
 # ..........Sign up form.........
 
 st.markdown("<h2 class='main-title' color='#00F2FE'>Sign up ✍</h2>", unsafe_allow_html=True)
-username=st.text_input("Username",placeholder="Enter your username")
-password=st.text_input("Password",type="password",placeholder="Enter your password")
-mobile=st.text_input("Mobile number",placeholder="Enter your mobile number")
-email=st.text_input("Email id",placeholder="Enter your email id")
-dob=st.text_input("Date of Birth",placeholder="Enter your date of birth")
+un=st.text_input("Username",placeholder="Enter your username")
+p=st.text_input("Password",type="password",placeholder="Enter your password")
+m=st.text_input("Mobile number",placeholder="Enter your mobile number")
+e=st.text_input("Email id",placeholder="Enter your email id")
+d=st.text_input("Date of Birth",placeholder="Enter your date of birth")
 if st.button("Sign up"):
-    user_data = {
-        "username": username,
-        "password": password,
-        "mobile": mobile,
-        "email": email,
-        "dob": dob
-    }
-    mycol.insert_one(user_data)
+    mycol.insert_one({"uname":un,"password":p,"mobileno":m,"email":e,"dob":d})
     st.write("Welcome", username)
     st.success("Sign up successful")
 
