@@ -3,7 +3,7 @@ import base64
 import os
 import pymongo
 
-conn = pymongo.MongoClient("mongodb+srv://Awadhesh:<SwordArtOnine>@cluster0.gbpzk4b.mongodb.net/?appName=Cluster0")
+conn = pymongo.MongoClient("mongodb+srv://Awadhesh:sword@cluster0.gbpzk4b.mongodb.net/?appName=Cluster0")
 mydb =conn["Prime"]
 mycol = mydb["users"]
 
