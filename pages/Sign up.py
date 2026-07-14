@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 import os
 import pymongo
-conn = pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2")
+conn = pymongo.MongoClient("mongodb+srv://Awadhesh:SwordArtOnine@cluster0.gbpzk4b.mongodb.net/?appName=Cluster0")
 mydb =conn["Prime"]
 mycol = mydb["users"]
 
@@ -86,14 +86,14 @@ mobile=st.text_input("Mobile number",placeholder="Enter your mobile number")
 email=st.text_input("Email id",placeholder="Enter your email id")
 dob=st.text_input("Date of Birth",placeholder="Enter your date of birth")
 if st.button("Sign up"):
-    user_data = {
+    users = {
         "username": username,
         "password": password,
         "mobile": mobile,
         "email": email,
         "dob": dob
     }
-    mycol.insert_one(user_data)
+    mycol.insert_one(users)
     st.write("Welcome", username)
     st.success("Sign up successful")
 
