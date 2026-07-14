@@ -79,7 +79,8 @@ st.markdown(
 
 # ..........Sign up form.........
 
-st.markdown("<h2 class='main-title' color='#00F2FE'>Sign up ✍</h2>", unsafe_allow_html=True)
+st.markdown("<h2 class='main-title' style='color:#00F2FE; text-decoration:none;'>Sign up ✍</h2>", unsafe_allow_html=True)
+username=st.text_input("Username",placeholder="Enter your username")
 username=st.text_input("Username",placeholder="Enter your username")
 password=st.text_input("Password",type="password",placeholder="Enter your password")
 mobile=st.text_input("Mobile number",placeholder="Enter your mobile number")
