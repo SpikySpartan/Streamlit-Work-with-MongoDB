@@ -86,14 +86,14 @@ mobile=st.text_input("Mobile number",placeholder="Enter your mobile number")
 email=st.text_input("Email id",placeholder="Enter your email id")
 dob=st.text_input("Date of Birth",placeholder="Enter your date of birth")
 if st.button("Sign up"):
-    users = {
+    Prime = {
         "username": username,
         "password": password,
         "mobile": mobile,
         "email": email,
         "dob": dob
     }
-    mycol.insert_one(users)
+    mycol.insert_one(Prime)
     st.write("Welcome", username)
     st.success("Sign up successful")
 
