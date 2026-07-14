@@ -118,7 +118,7 @@ st.html("""
     <style>
     .st-key-B1{
         background-color:#ffffff!important;
-        color: white !important;
+        color:  !important;
         border-radius: 10px !important; 
         border: 2px solid #3e8e41 !important;
         font-size: 18px !important;
