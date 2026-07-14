@@ -97,7 +97,7 @@ if st.button("Sign up"):
     st.write("Welcome", username)
     st.success("Sign up successful")
     if st.button("Go to Login Page"):
-        st.switch_page("pages/Login.py")
+        st.switch_page("Login.py")
 
 
 #..................source code................
