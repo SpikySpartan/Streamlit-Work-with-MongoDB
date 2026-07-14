@@ -96,6 +96,8 @@ if st.button("Sign up"):
     mycol.insert_one(user_data)
     st.write("Welcome", username)
     st.success("Sign up successful")
+    if st.button("Go to Login Page"):
+        st.switch_page("pages/Login.py")
 
 
 #..................source code................
