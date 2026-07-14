@@ -14,7 +14,7 @@ def get_base64_image(image_path):
             return base64.b64encode(img_file.read()).decode()
     return ""
 
-bg_base64 = get_base64_image("images/Sign.jpg")
+bg_base64 = get_base64_image("images/Color2.png")
 if bg_base64:
     st.markdown(
         f"""
